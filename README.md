@@ -26,7 +26,7 @@ yarn test
 
 
 
-#### **Design and assumptions** 
+### **Design and assumptions** 
 
 - redux Actions are design in a  **_Requested  _Response**  pattern , this is done to make the flow of events and code clearer.  
 
@@ -54,7 +54,7 @@ yarn test
 
 
 
-#### **Options and mock data**
+### **Options and mock data**
 
 The app loads some mock data , I carefully orchestrated the architecture of loading this data ...  in accordance with solid architecture principles : 
 
@@ -79,7 +79,7 @@ The app loads some mock data , I carefully orchestrated the architecture of load
 
 
 
-#### **Usability ** 
+### **Usability** 
 
 - a record needs a non empty title, can have a quantity of 0 ( to allow adding records with 0 quantity )
 
@@ -113,7 +113,7 @@ The app loads some mock data , I carefully orchestrated the architecture of load
 
 
 
-#### **Css and mobile responsiveness** 
+### **Css and mobile responsiveness** 
 
 - the app was built in a responsive way to allow good viewing at changing heights and widths , and in very small screens. 
 - entry inputs have placeholders, that will disappear when input is in focus
