@@ -22,6 +22,8 @@ yarn test
 
 
 
+
+
 **Design and assumptions** 
 
 - action are design as a  **_Requested  _Response**  , this is done to make the flow of events and code clearer.  Initially an action is requested ( for example as a consequence of user interaction ) ,  then typically some logic can happen in the action creators , thunk , ( or in a saga in more complex cases ) , typically then a response action is fired with optional relevant  data. 
@@ -31,6 +33,10 @@ yarn test
 - InvoiceList : is a connected component , it maps over the record collection , and maps events from the InvoiceRow to redux actions , Note: the key used in the mapping is a guid generated when the record is created.
 - InvoiceTotalSummery :  shows the tally of all the records , the calculation are done using a selector and the valus are not stored in the redux store , ( Note: if calculations are expensive there are ways to calculate only what has changed using the delta of what changed. ) 
 - InvoiceEditorPage :  is used as a layout  for both the InvoiceList and the InvoiceTotalSummery (  both of these components can live separately and are not connected to each other neither do they need any porps supplied to them. )   , in a larger app , there may be more views that organize the components in different layouts. 
+
+
+
+
 
 
 
@@ -52,6 +58,8 @@ the app loads some mock data , I carefully orchestrated the architecture of load
 - the getRecordsRequested and getApplicationDataRequested both simulate a delay in getting the data, using timeout , I added this to allows to experiment with the issues of getting only some information before others.  
 
   
+
+
 
 
 
@@ -80,6 +88,8 @@ the app loads some mock data , I carefully orchestrated the architecture of load
 - **'remove empty'** button :  removes all new records which were added but never edited,
 
   Note:  if an empty record is currently in edit mode it will not be removed. 
+
+
 
 
 
