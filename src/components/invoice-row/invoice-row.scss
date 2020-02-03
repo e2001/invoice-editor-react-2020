@@ -1,0 +1,51 @@
+@import "../../css/variables";
+
+
+.row-container {
+
+  &.in-edit{
+    .row-column.data{
+      background-color: $editRowBackgroundColor;
+    }
+  }
+
+  .action-item {
+    padding-left: 3px;
+    padding-right: 3px;
+    @media (max-width: $breakpoint1) {
+      padding-left: 2px;
+      padding-right: 2px;
+    }
+  }
+
+  input {
+    padding: 2px;
+    padding-left: 2px;
+    font-size: 1em;
+    @media (max-width: $breakpoint1) {
+      padding: 2px;
+    }
+  }
+
+  button {
+    cursor: pointer;
+    @media (max-width: $breakpoint1) {
+      // width: 20px;
+      padding-right: 1px;
+      padding-left: 1px;
+    }
+  }
+
+  @media (max-width: $breakpoint1) {
+
+    button .fa{
+      font-size: 0.8em;
+    }
+
+    .edit-icon {
+      display: none;
+    }
+
+  }
+}
+

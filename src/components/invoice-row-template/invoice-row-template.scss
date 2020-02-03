@@ -1,0 +1,41 @@
+@import "../../css/variables";
+
+.header-row-template {
+
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr 0.6fr 0.7fr 0.7fr 0.2fr;
+  margin-top: 2px;
+  margin-bottom: 2px;
+
+  @media (max-width: $breakpoint1) {
+    grid-template-columns: 0.8fr 1.5fr 0.6fr 0.7fr 0.7fr 0.2fr;
+  }
+
+  .row-column{
+    display: grid;
+    align-items: center;
+  }
+
+  .actions-left{
+    display: flex;
+    min-width: 130px;
+    padding-left: 5px;
+    padding-right: 5px;
+    justify-content: flex-end;
+    align-items: center;
+    @media (max-width: $breakpoint1) {
+      min-width: 50px;
+      padding-left: 1px;
+      padding-right: 1px;
+    }
+  }
+  .actions-right{
+    width: 10%;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}

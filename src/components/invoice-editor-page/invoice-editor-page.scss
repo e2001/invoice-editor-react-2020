@@ -1,0 +1,27 @@
+@import "../../css/variables";
+
+
+.invoice-editor-page{
+  display: grid;
+  grid-template-rows: minmax(150px,75%) minmax(100px,25%);
+  height: calc(100vh - #{$headerHeight});
+  margin-right: 20%;
+  margin-left: 20%;
+
+  @media (max-width: $breakpoint3) {
+    margin-right: 12%;
+    margin-left: 12%;
+  }
+  @media (max-width: $breakpoint2) {
+    margin-right: 2%;
+    margin-left: 2%;
+  }
+  font-size: 0.9em;
+  @media (max-width: $breakpoint1) {
+    font-size: 0.8em;
+    margin-right: 1%;
+    margin-left: 1%;
+    height: calc(100vh - #{$headerHeightSmall});
+  }
+
+}

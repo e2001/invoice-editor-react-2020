@@ -1,0 +1,42 @@
+@import "../../css/variables";
+
+.invoice-list {
+  display: grid;
+  grid-template-rows: 40px minmax(0px, 100%);
+  height: 100%;
+  overflow: hidden;
+
+  @media (max-width: $breakpoint1) {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  .action-bar {
+    background-color:  #EAEAEA;
+    border-bottom: 1px solid darken(#EAEAEA,12%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+
+    button {
+      margin-left: 2px;
+      margin-right: 2px;
+    }
+  }
+
+  .record-list-container {
+    display: grid;
+    grid-template-rows: 30px minmax(0px, 100%);
+    height: 100%;
+  }
+
+  .record-list-rows-container {
+     overflow-y: scroll;
+  }
+
+  .row-message-container{
+    padding-top: 20px;
+  }
+}
