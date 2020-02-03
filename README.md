@@ -22,6 +22,8 @@ yarn test
 
 
 
+---
+
 
 
 **Design and assumptions** 
@@ -37,6 +39,8 @@ yarn test
 
 
 
+
+---
 
 
 
@@ -60,6 +64,8 @@ the app loads some mock data , I carefully orchestrated the architecture of load
   
 
 
+
+---
 
 
 
@@ -90,6 +96,8 @@ the app loads some mock data , I carefully orchestrated the architecture of load
   Note:  if an empty record is currently in edit mode it will not be removed. 
 
 
+
+---
 
 
 
